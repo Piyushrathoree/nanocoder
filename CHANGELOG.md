@@ -1,5 +1,14 @@
 # @nanocollective/nanocoder
 
+# 1.32.0
+
+- Enhanced `/help` with categorized command listings and command-specific details, including usage, supported options and subcommands, aliases, and examples. Closes #1308.
+
+- Fix `loadAppConfig` stripping the `.source` field when unwrapping MCP server configs, which silently disabled `validateProjectConfigSecurity`'s hardcoded-credential scanner for project-level MCP servers. Closes #1248.
+- update test - mcp-client-spec.ts
+
+If there are any problems, feedback or thoughts please drop an issue or message us through Discord! Thank you for using Nanocoder.
+
 # 1.31.0
 
 - Added a first-class provider template for Cheaper Inference, an OpenAI-compatible gateway, to the `/settings providers` wizard. Selecting it fills in the base URL (`https://api.cheaperinference.com/v1`) so only an API key and a model name are needed, and the wizard can fetch the account's model list over the standard `/models` endpoint.
